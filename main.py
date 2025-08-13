@@ -6,7 +6,11 @@ import time
 import wavio as wv
 # functions
 def Record():
-    pass
+    freq = 44100
+    dur = int(duration.get())
+    recording = sound.rec(int(dur * freq), samplerate=freq, channels=2)
+    sound.wait()
+    write("recording.wav", freq, recording)
 
 
 root = Tk()
