@@ -18,4 +18,8 @@ Label(root, image=photo, bg="#4a4a4a").pack(pady=20)
 # name
 Label(text="Voice Recorder", font=("Arial", 30, "bold"), bg="#4a4a4a", fg="white").pack()
 
+# entry box
+duration = StringVar()
+Entry(root, textvariable=duration, font=("Arial", 20), width=15).pack(pady=10)
+Label(text="Enter Duration in seconds", font=("Arial", 15), bg="#4a4a4a", fg="white").pack()
 root.mainloop()
