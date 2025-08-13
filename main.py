@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import sounddevice as sound
-from scipy.io.wavfile import 
+from scipy.io.wavfile import write
 import time
 import wavio as wv
 # functions
@@ -18,8 +18,8 @@ def Record():
     while temp > 0:
         root.update()
         time.sleep(1)
-        time -= 1
-    
+        temp -= 1
+
     if (temp == 0):
         messagebox.showinfo("Time Countdown", "Tims's up")
     Label(text=f"{str(temp)}", font="arial, 40", width=4, background="#4a4a4a").place(x=240, y=5)
