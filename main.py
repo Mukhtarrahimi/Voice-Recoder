@@ -11,4 +11,8 @@ root.configure(background="#4a4a4a")
 image_icon = PhotoImage(file="Record.png")
 root.iconphoto(False, image_icon)
 
+# logo
+photo = PhotoImage(file="Record.png")
+Label(root, image=photo, bg="#4a4a4a").pack(pady=20)
+
 root.mainloop()
