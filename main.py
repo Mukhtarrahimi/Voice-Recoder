@@ -1,8 +1,9 @@
 from tkinter import *
 from tkinter import messagebox
-
-
-
+import sounddevice as sound
+# functions
+def Record():
+    pass
 
 
 root = Tk()
