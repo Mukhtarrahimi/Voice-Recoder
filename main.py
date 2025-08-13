@@ -15,4 +15,7 @@ root.iconphoto(False, image_icon)
 photo = PhotoImage(file="Record.png")
 Label(root, image=photo, bg="#4a4a4a").pack(pady=20)
 
+# name
+Label(text="Voice Recorder", font=("Arial", 30, "bold"), bg="#4a4a4a", fg="white").pack()
+
 root.mainloop()
