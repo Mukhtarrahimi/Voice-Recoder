@@ -9,6 +9,20 @@ def Record():
     freq = 44100
     dur = int(duration.get())
     recording = sound.rec(int(dur * freq), samplerate=freq, channels=2)
+    # timer
+    try:
+        temp = int(duration.get())
+    except:
+        print("Please Enter the right value")
+    
+    while temp > 0:
+        root.update()
+        time.sleep(1)
+        time -= 1
+    
+    if (temp == 0):
+        messagebox.showinfo("Time Countdown", "Tims's up")
+    Label(text=f"{str(temp)}", font="arial, 40", width=4, background="#4a4a4a").place(x=240, y=5)
     sound.wait()
     write("recording.wav", freq, recording)
 
