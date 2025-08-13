@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
 import sounddevice as sound
+from scipy.io.wavfile import 
+
 # functions
 def Record():
     pass
