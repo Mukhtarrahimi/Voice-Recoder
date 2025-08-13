@@ -2,7 +2,8 @@ from tkinter import *
 from tkinter import messagebox
 import sounddevice as sound
 from scipy.io.wavfile import 
-
+import time
+import wavio as wv
 # functions
 def Record():
     pass
